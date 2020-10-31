@@ -8,8 +8,20 @@ public class DemoGuru99Application {
 		guru.invokeBrowser("chrome");
 
 		guru.loginToApplication("mngr291840", "dYnusAv");
-
-		guru.closeBrowser();
+		
+		guru.addCustomer();
+		
+		
+		  String customerId = guru.getCustomerId();
+		  
+		  System.out.println("Customer Id - "+ customerId);
+		  
+		  guru.addAccount(customerId);
+		  
+		  guru.logOut();
+		  
+		  guru.closeBrowser();
+		 
 	}
 
 }

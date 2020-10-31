@@ -5,13 +5,19 @@ public class DemoMultipleBrowser {
 	public static void main(String[] args) {
 		MulipleBrowserExamples mb = new MulipleBrowserExamples();
 
-		mb.invokeBrowser("edge");
+		try {
+			mb.invokeBrowser("safari");
 
-		String title = mb.getTitle();
+			String title = mb.getTitle();
 
-		System.out.println("Title of the page - " + title);
+			System.out.println("Title of the page - " + title);
 
-		mb.closeBrowser();
+			mb.closeBrowser();
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

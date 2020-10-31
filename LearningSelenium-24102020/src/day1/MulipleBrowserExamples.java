@@ -10,7 +10,7 @@ public class MulipleBrowserExamples {
 
 	String url = "https://test.qatechhub.com";
 
-	public void invokeBrowser(String browserType) {
+	public void invokeBrowser(String browserType) throws Exception {
 
 		if (browserType.equals("chrome")) {
 
@@ -25,6 +25,8 @@ public class MulipleBrowserExamples {
 					"C:\\Users\\SAURABH\\eclipse-workspace\\libs\\msedgedriver.exe");
 
 			driver = new EdgeDriver();
+		} else {
+			throw new Exception("Invalid browser type - " + browserType);
 		}
 
 		driver.manage().window().maximize();
