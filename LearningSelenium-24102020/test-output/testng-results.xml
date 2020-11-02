@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8403" started-at="2020-11-02T17:48:49 IST" finished-at="2020-11-02T17:48:57 IST">
+    <groups>
+      <group name="signin">
+        <method signature="Guru99ProjectDependencyGroups.loginToApplication(java.lang.String, java.lang.String)[pri:0, instance:day3.Guru99ProjectDependencyGroups@5b87ed94]" name="loginToApplication" class="day3.Guru99ProjectDependencyGroups"/>
+      </group> <!-- signin -->
+      <group name="invokeBrowser">
+        <method signature="Guru99ProjectDependencyGroups.invokeBrowser()[pri:0, instance:day3.Guru99ProjectDependencyGroups@5b87ed94]" name="invokeBrowser" class="day3.Guru99ProjectDependencyGroups"/>
+      </group> <!-- invokeBrowser -->
+    </groups>
+    <test name="Test" duration-ms="8403" started-at="2020-11-02T17:48:49 IST" finished-at="2020-11-02T17:48:57 IST">
+      <class name="day3.Guru99ProjectDependencyGroups">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:day3.Guru99ProjectDependencyGroups@5b87ed94]" name="invokeBrowser" duration-ms="8348" started-at="2020-11-02T17:48:49 IST" finished-at="2020-11-02T17:48:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="loginToApplication(java.lang.String, java.lang.String)[pri:0, instance:day3.Guru99ProjectDependencyGroups@5b87ed94]" name="loginToApplication" duration-ms="0" depends-on-groups="invokeBrowser" started-at="2020-11-02T17:48:57 IST" finished-at="2020-11-02T17:48:57 IST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'userId' is required by @Test on method loginToApplication but has not been marked @Optional or defined
+in C:\Users\SAURABH\git\learning-selenium-24-10-2020\LearningSelenium-24102020\dependencyTestingOnGroup.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'userId' is required by @Test on method loginToApplication but has not been marked @Optional or defined
+in C:\Users\SAURABH\git\learning-selenium-24-10-2020\LearningSelenium-24102020\dependencyTestingOnGroup.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+      </class> <!-- day3.Guru99ProjectDependencyGroups -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

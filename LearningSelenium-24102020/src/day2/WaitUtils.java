@@ -39,15 +39,11 @@ public class WaitUtils {
 	public static void waitTillElementVisibleViaFluent(WebDriver driver, int pollingTime, int timeoutInSeconds,
 			By locator) {
 
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-				.withTimeout(Duration.ofSeconds(timeoutInSeconds))
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(timeoutInSeconds))
 				.pollingEvery(Duration.ofMillis(pollingTime)).ignoring(NoSuchElementException.class);
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		
-		
-		
+
 	}
 
-	
 }

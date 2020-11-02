@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -26,7 +27,20 @@ public class AmazonProject {
 
 			driver = new ChromeDriver();
 
-		} else if (browserType.equals("edge")) {
+		} else if (browserType.equals("chrome-headless")) {
+
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\Users\\SAURABH\\eclipse-workspace\\libs\\chromedriver.exe");
+			
+			ChromeOptions chrOptions = new ChromeOptions();
+			
+			chrOptions.addArguments("--headless");
+
+			driver = new ChromeDriver(chrOptions);
+
+		} 
+		
+		else if (browserType.equals("edge")) {
 
 			System.setProperty("webdriver.edge.driver",
 					"C:\\Users\\SAURABH\\eclipse-workspace\\libs\\msedgedriver.exe");
