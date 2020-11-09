@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day3.Guru99ProjectDependencyTesting">
+      <class name="day4.Guru99Project">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="loginToApplication"/>
+          <include name="loginToApplication" invocation-numbers="1"/>
           <include name="invokeBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- day3.Guru99ProjectDependencyTesting -->
+      </class> <!-- day4.Guru99Project -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="invokeBrowser"/>
-        <include name="signin"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day3.Guru99ProjectDependencyGroups">
+      <class name="day4.Guru99Project">
         <methods>
+          <include name="loginToApplication" invocation-numbers="1"/>
           <include name="invokeBrowser"/>
-          <include name="loginToApplication"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- day3.Guru99ProjectDependencyGroups -->
+      </class> <!-- day4.Guru99Project -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

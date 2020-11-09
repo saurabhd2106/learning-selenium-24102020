@@ -1,41 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8403" started-at="2020-11-02T17:48:49 IST" finished-at="2020-11-02T17:48:57 IST">
+  <suite name="Default suite" duration-ms="41019" started-at="2020-11-07T10:04:09 IST" finished-at="2020-11-07T10:04:50 IST">
     <groups>
-      <group name="signin">
-        <method signature="Guru99ProjectDependencyGroups.loginToApplication(java.lang.String, java.lang.String)[pri:0, instance:day3.Guru99ProjectDependencyGroups@5b87ed94]" name="loginToApplication" class="day3.Guru99ProjectDependencyGroups"/>
-      </group> <!-- signin -->
-      <group name="invokeBrowser">
-        <method signature="Guru99ProjectDependencyGroups.invokeBrowser()[pri:0, instance:day3.Guru99ProjectDependencyGroups@5b87ed94]" name="invokeBrowser" class="day3.Guru99ProjectDependencyGroups"/>
-      </group> <!-- invokeBrowser -->
     </groups>
-    <test name="Test" duration-ms="8403" started-at="2020-11-02T17:48:49 IST" finished-at="2020-11-02T17:48:57 IST">
-      <class name="day3.Guru99ProjectDependencyGroups">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:day3.Guru99ProjectDependencyGroups@5b87ed94]" name="invokeBrowser" duration-ms="8348" started-at="2020-11-02T17:48:49 IST" finished-at="2020-11-02T17:48:57 IST">
+    <test name="Default test" duration-ms="41019" started-at="2020-11-07T10:04:09 IST" finished-at="2020-11-07T10:04:50 IST">
+      <class name="day4.Guru99Project">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:day4.Guru99Project@3dd4520b]" name="invokeBrowser" is-config="true" duration-ms="8657" started-at="2020-11-07T10:04:09 IST" finished-at="2020-11-07T10:04:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="FAIL" signature="loginToApplication(java.lang.String, java.lang.String)[pri:0, instance:day3.Guru99ProjectDependencyGroups@5b87ed94]" name="loginToApplication" duration-ms="0" depends-on-groups="invokeBrowser" started-at="2020-11-02T17:48:57 IST" finished-at="2020-11-02T17:48:57 IST">
-          <exception class="org.testng.TestNGException">
+        <test-method status="PASS" signature="loginToApplication(java.lang.String, java.lang.String)[pri:0, instance:day4.Guru99Project@3dd4520b]" name="loginToApplication" duration-ms="4730" started-at="2020-11-07T10:04:18 IST" data-provider="getData" finished-at="2020-11-07T10:04:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr291840]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dYnusAv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:day4.Guru99Project@3dd4520b]" name="closeBrowser" is-config="true" duration-ms="903" started-at="2020-11-07T10:04:22 IST" finished-at="2020-11-07T10:04:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:day4.Guru99Project@3dd4520b]" name="invokeBrowser" is-config="true" duration-ms="7979" started-at="2020-11-07T10:04:23 IST" finished-at="2020-11-07T10:04:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="loginToApplication(java.lang.String, java.lang.String)[pri:0, instance:day4.Guru99Project@3dd4520b]" name="loginToApplication" duration-ms="3748" started-at="2020-11-07T10:04:31 IST" data-provider="getData" finished-at="2020-11-07T10:04:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr291841]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dYnusAv]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[
-Parameter 'userId' is required by @Test on method loginToApplication but has not been marked @Optional or defined
-in C:\Users\SAURABH\git\learning-selenium-24-10-2020\LearningSelenium-24102020\dependencyTestingOnGroup.xml]]>
+              <![CDATA[unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=86.0.4240.183): User or Password is not valid
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-8IQA0EJ', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\SAURABH\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a0a10b6b0987e472f2bcb0bb3ee735d
+*** Element info: {Using=xpath, value=//td[starts-with(text(), 'Manger Id')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'userId' is required by @Test on method loginToApplication but has not been marked @Optional or defined
-in C:\Users\SAURABH\git\learning-selenium-24-10-2020\LearningSelenium-24102020\dependencyTestingOnGroup.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=86.0.4240.183): User or Password is not valid
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-8IQA0EJ', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\SAURABH\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a0a10b6b0987e472f2bcb0bb3ee735d
+*** Element info: {Using=xpath, value=//td[starts-with(text(), 'Manger Id')]}
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at day2.WaitUtils.waitTillElementVisible(WaitUtils.java:19)
+at day4.Guru99Project.loginToApplication(Guru99Project.java:64)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -57,11 +112,39 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-      </class> <!-- day3.Guru99ProjectDependencyGroups -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:day4.Guru99Project@3dd4520b]" name="closeBrowser" is-config="true" duration-ms="897" started-at="2020-11-07T10:04:35 IST" finished-at="2020-11-07T10:04:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:day4.Guru99Project@3dd4520b]" name="invokeBrowser" is-config="true" duration-ms="11169" started-at="2020-11-07T10:04:36 IST" finished-at="2020-11-07T10:04:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="loginToApplication(java.lang.String, java.lang.String)[pri:0, instance:day4.Guru99Project@3dd4520b]" name="loginToApplication" duration-ms="1954" started-at="2020-11-07T10:04:47 IST" data-provider="getData" finished-at="2020-11-07T10:04:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr291840]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dYnusAv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:day4.Guru99Project@3dd4520b]" name="closeBrowser" is-config="true" duration-ms="882" started-at="2020-11-07T10:04:49 IST" finished-at="2020-11-07T10:04:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- day4.Guru99Project -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
